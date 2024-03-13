@@ -130,7 +130,7 @@
                     "kind": "exp-lookit-video",
                     "audio": {
                         "loop": false,
-                        "source": "trialQuestion"
+                        "source": "trialQuestion_noPause"
                     },
                      "video": {
                         "loop": true,
@@ -143,7 +143,7 @@
                     "kind": "exp-lookit-video",
                     "audio": {
                         "loop": false,
-                        "source": "trialQuestionV2"
+                        "source": "trialQuestionV2_noPause"
                     },
                      "video": {
                         "loop": true,
@@ -156,7 +156,7 @@
                     "kind": "exp-lookit-video",
                     "audio": {
                         "loop": false,
-                        "source": "trialQuestionV3"
+                        "source": "trialQuestionV3_noPause"
                     },
                      "video": {
                         "loop": true,
@@ -168,14 +168,14 @@
             ],
             "parameterSets": [
                 {
-                    "VIDEO1": "Inclusion 1",
-                    "VIDEO2": "Inclusion 2",
-                    "VIDEO3": "Inclusion 3"
+                    "VIDEO1": "inclusion_3",
+                    "VIDEO2": "inclusion_2",
+                    "VIDEO3": "inclusion_1"
                 },
                 {
-                    "VIDEO1": "Inclusion 1",
-                    "VIDEO2": "Inclusion 2",
-                    "VIDEO3": "Inclusion 3"
+                    "VIDEO1": "inclusion_3",
+                    "VIDEO2": "inclusion_2",
+                    "VIDEO3": "inclusion_1"
                 }
             ],
             "commonFrameProperties": {
@@ -183,8 +183,10 @@
                 "pageColor": "white",
                 "backgroundColor": "white",
                 "parentTextBlock": {
-                    "title": "For Parents:",
-                    "text": "Have your child explain what they see in this scene. Please do not help them."
+                    "css": {
+                        "color": "#999999"
+                    },
+                    "text": "For Parents: We are interested in how children think on their own, please try to not influence their response. Once they are done describing, click “Next” to continue."
                 },
                 "audioTypes": ["mp3", "ogg"],
                 "videoTypes": ["mp4"],
@@ -442,8 +444,10 @@
                 "pageColor": "white",
                 "backgroundColor": "white",
                 "parentTextBlock": {
-                    "title": "For Parents:",
-                    "text": "Have your child explain what they see in this scene. Please do not help them."
+                    "css": {
+                        "color": "#999999"
+                    },
+                    "text": "For Parents: We are interested in how children think on their own, please try to not influence their response. Once they are done describing, click “Next” to continue"
                 },
                 "audioTypes": ["mp3", "ogg"],
                 "videoTypes": ["mp4"],
@@ -463,6 +467,12 @@
                 "source": "goAgain"
             },
             "backgroundColor": "white",
+            "parentTextBlock": {
+                    "css": {
+                        "color": "#999999"
+                    },
+                "text": "For Parents: Press “Next” to proceed. However, if your child is too tired or does not want to proceed, please press the “Esc” key to end the study."
+            },
             "showWaitForRecordingMessage": false,
             "autoProceed": false,
             "nextButtonText": "Next Round",
@@ -775,6 +785,8 @@
         "video-consent",
         "instructions",
         "welcome",
+        "inclusions-intro",
+        "inclusion-trials",
         "trials-intro",
         "trials-r1",
         "intermission",
