@@ -1,0 +1,786 @@
+{
+    "frames": {
+        "study-intro": {
+            "kind": "exp-lookit-text",
+            "blocks": [
+                {
+                    "emph": true,
+                    "text": "\nFirst, let's go over what will happen!",
+                    "title": "'Explore a new world: What do you see?' Study Overview"
+                },
+                {
+                    "text": "\nIn this study, your child will watch 14 short, animated videos. After each video, your child will be asked to describe what they saw. Once your child watches all the videos, your child will be asked if they would like to watch the videos again."
+                }
+            ],
+            "showPreviousButton": false
+        },
+        "video-config": {
+            "kind": "exp-video-config",
+            "troubleshootingIntro": ""
+        },
+        "video-consent": {
+            "kind": "exp-lookit-video-consent",
+            "PIName": "Laura Schulz",
+            "datause": "<<We want to know if children understand what makes sets easier and harder to count, even before they have a lot of experience counting themselves>>. A researcher will watch your video and transcribe your child's answers after each video, as well as other information such as interactions between you and your child during the study.",
+            "payment": "After you finish the study, we will email you a $5 Amazon gift card within five days. To be eligible for the gift card you must submit a valid consent statement, we need to see that there is a child with you, and your child must be in the age range for this study. We will send a gift card even if you do not finish the whole study, your child chooses not to proceed to the second round of videos, or we are not able to use your child's data. There are no other direct benefits to you or your child for participating, but we hope you will enjoy the experience.",
+            "purpose": "We want to know if children understand what makes sets easier and harder to count, even before they have a lot of experience counting themselves.",
+            "PIContact": "Karla Perez at perezke@mit.edu",
+            "procedures": "You and your child will go through 14 short scenes and your child will be asked a question after each one. There are no anticipated risks associated with participating.",
+            "institution": "MIT"
+        },
+        "instructions": {
+            "kind": "exp-lookit-instructions",
+            "blocks": [
+                {
+                    "title": "1. Overview of how to participate in this study",
+                    "listblocks": [
+                        {
+                            "text": "You and your child will watch 14 short scenes, each followed by a question for your child to answer."
+                        },
+                        {
+                            "text": "<<If your child responds verbally or points but cannot click the card themselves, please click the card (purple or green) corresponding to their choice>>."
+                        },
+                        {
+                            "text": "<<If they do not choose one of the two cards (purple or green), please just click the ‘No Reply’ button>>."
+                        }
+                    ]
+                },
+                {
+                    "text": "Please try playing this sample audio to make sure you'll be able to hear the story.",
+                    "title": "2. Adjust your speakers",
+                    "mediaBlock": {
+                        "text": "You should hear 'Ready to go!'",
+                        "isVideo": false,
+                        "sources": [
+                            {
+                                "src": "https://s3.amazonaws.com/lookitcontents/exp-physics-final/audio/ready.mp3",
+                                "type": "audio/mp3"
+                            },
+                            {
+                                "src": "https://s3.amazonaws.com/lookitcontents/exp-physics-final/audio/ready.ogg",
+                                "type": "audio/ogg"
+                            }
+                        ],
+                        "mustPlay": true,
+                        "warningText": "Please try playing the sample audio."
+                    }
+                }
+            ],
+            "showWebcam": true,
+            "webcamBlocks": [
+                {
+                    "title": "3. Make sure we can see you",
+                    "listblocks": [
+                        {
+                            "text": "Take a look at your webcam view above. Get comfy, and adjust your own position or the computer as needed so both you and your child are visible."
+                        },
+                        {
+                            "text": "This isn't a Zoom call - no one in the lab can see you - but the recorded video of your participation will be sent to the lab to help with data analysis. It's helpful for us to be able to see if your child was pointing or looking confused, for example."
+                        }
+                    ]
+                }
+            ],
+            "nextButtonText": "Next"
+        },
+        "welcome": {
+            "kind": "exp-lookit-video",
+            "video": {
+                "loop": false,
+                "position": "fill",
+                "source": "welcome"
+            },
+            "backgroundColor": "white",
+            "showWaitForRecordingMessage": false,
+            "autoProceed": false,
+            "requireVideoCount": 1,
+            "doRecording": false,
+            "frameOffsetAfterPause": 0,
+            "baseDir": "https://raw.githubusercontent.com/55708r/lookit-stimuli-template/master/",
+            "videoTypes": [
+                "webm",
+                "mp4"
+            ],
+            "nextButtonText": "START"
+        },
+        "inclusions-intro": {
+            "kind": "exp-lookit-video",
+            "video": {
+                "loop": false,
+                "position": "fill",
+                "source": "inclusionsIntro",
+                "nextButtonText": "Next"
+            },
+            "backgroundColor": "white",
+            "showWaitForRecordingMessage": false,
+            "autoProceed": false,
+            "requireVideoCount": 1,
+            "doRecording": false,
+            "frameOffsetAfterPause": 0,
+            "baseDir": "https://raw.githubusercontent.com/55708r/lookit-stimuli-template/master/",
+            "videoTypes": [
+                "webm",
+                "mp4"
+            ]
+        },
+        "inclusion-trials": {
+            "kind": "choice",
+            "sampler": "random-parameter-set",
+            "frameList": [
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestion"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO1"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestionV2"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO2"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestionV3"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO3"
+                    },
+                    "doRecording": true
+                }
+            ],
+            "parameterSets": [
+                {
+                    "VIDEO1": "Inclusion 1",
+                    "VIDEO2": "Inclusion 2",
+                    "VIDEO3": "Inclusion 3"
+                },
+                {
+                    "VIDEO1": "Inclusion 1",
+                    "VIDEO2": "Inclusion 2",
+                    "VIDEO3": "Inclusion 3"
+                }
+            ],
+            "commonFrameProperties": {
+                "baseDir": "https://raw.githubusercontent.com/55708r/lookit-stimuli-template/master/",
+                "pageColor": "white",
+                "backgroundColor": "white",
+                "parentTextBlock": {
+                    "title": "For Parents:",
+                    "text": "Have your child explain what they see in this scene. Please do not help them."
+                },
+                "audioTypes": ["mp3", "ogg"],
+                "videoTypes": ["mp4"],
+                "showPreviousButton": false,
+                "autoProceed": false,
+                "nextButtonText": "Next",
+                "requiredDuration": 5,
+                "requireVideoCount": 0,
+                "showWaitForRecordingMessage": false
+            }
+        },
+        "trials-intro": {
+            "kind": "exp-lookit-video",
+            "video": {
+                "loop": false,
+                "position": "fill",
+                "source": "trialsIntro",
+                "nextButtonText": "Next"
+            },
+            "backgroundColor": "white",
+            "showWaitForRecordingMessage": false,
+            "autoProceed": false,
+            "requireVideoCount": 1,
+            "doRecording": false,
+            "frameOffsetAfterPause": 0,
+            "baseDir": "https://raw.githubusercontent.com/55708r/lookit-stimuli-template/master/",
+            "videoTypes": [
+                "webm",
+                "mp4"
+            ]
+        },
+        "trials-r1": {
+            "kind": "choice",
+            "sampler": "random-parameter-set",
+            "frameList": [
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestion"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO1"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestionV2"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO2"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestionV3"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO3"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestion"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO4"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestionV2"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO5"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestionV3"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO6"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestion"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO7"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestionV2"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO8"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestionV3"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO9"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestion"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO10"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestionV2"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO11"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestionV3"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO12"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestion"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO13"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestionV2"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO14"
+                    },
+                    "doRecording": true
+                }
+            ],
+            "parameterSets": [
+                {
+                    "VIDEO1": "Frame 4",
+                    "VIDEO2": "Frame 11",
+                    "VIDEO3": "Frame 14",
+                    "VIDEO4": "Frame 13",
+                    "VIDEO5": "Frame 6",
+                    "VIDEO6": "Frame 7",
+                    "VIDEO7": "Frame 5",
+                    "VIDEO8": "Frame 8",
+                    "VIDEO9": "Frame 1",
+                    "VIDEO10": "Frame 10",
+                    "VIDEO11": "Frame 9",
+                    "VIDEO12": "Frame 3",
+                    "VIDEO13": "Frame 2",
+                    "VIDEO14": "Frame 4"
+                },
+                {
+                    "VIDEO1": "Frame 4",
+                    "VIDEO2": "Frame 11",
+                    "VIDEO3": "Frame 14",
+                    "VIDEO4": "Frame 13",
+                    "VIDEO5": "Frame 6",
+                    "VIDEO6": "Frame 7",
+                    "VIDEO7": "Frame 5",
+                    "VIDEO8": "Frame 8",
+                    "VIDEO9": "Frame 1",
+                    "VIDEO10": "Frame 10",
+                    "VIDEO11": "Frame 9",
+                    "VIDEO12": "Frame 3",
+                    "VIDEO13": "Frame 2",
+                    "VIDEO14": "Frame 4"
+                }
+            ],
+            "commonFrameProperties": {
+                "baseDir": "https://raw.githubusercontent.com/55708r/lookit-stimuli-template/master/",
+                "pageColor": "white",
+                "backgroundColor": "white",
+                "parentTextBlock": {
+                    "title": "For Parents:",
+                    "text": "Have your child explain what they see in this scene. Please do not help them."
+                },
+                "audioTypes": ["mp3", "ogg"],
+                "videoTypes": ["mp4"],
+                "showPreviousButton": false,
+                "autoProceed": false,
+                "nextButtonText": "Next",
+                "requiredDuration": 5,
+                "requireVideoCount": 0,
+                "showWaitForRecordingMessage": false
+            }
+        },
+        "intermission": {
+            "kind": "exp-lookit-video",
+            "video": {
+                "loop": false,
+                "position": "fill",
+                "source": "goAgain"
+            },
+            "backgroundColor": "white",
+            "showWaitForRecordingMessage": false,
+            "autoProceed": false,
+            "nextButtonText": "Next Round",
+            "requireVideoCount": 1,
+            "doRecording": false,
+            "frameOffsetAfterPause": 0,
+            "baseDir": "https://raw.githubusercontent.com/55708r/lookit-stimuli-template/master/",
+            "videoTypes": [
+                "webm",
+                "mp4"
+            ]
+        },
+        "trials-r2": {
+            "kind": "choice",
+            "sampler": "random-parameter-set",
+            "frameList": [
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestion"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO1"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestionV2"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO2"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestionV3"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO3"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestion"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO4"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestionV2"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO5"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestionV3"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO6"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestion"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO7"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestionV2"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO8"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestionV3"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO9"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestion"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO10"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestionV2"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO11"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestionV3"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO12"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestion"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO13"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                    "audio": {
+                        "loop": false,
+                        "source": "trialQuestionV2"
+                    },
+                     "video": {
+                        "loop": true,
+                        "position": "fill",
+                        "source": "VIDEO14"
+                    },
+                    "doRecording": true
+                }
+            ],
+            "parameterSets": [
+                {
+                    "VIDEO1": "Frame 4",
+                    "VIDEO2": "Frame 11",
+                    "VIDEO3": "Frame 14",
+                    "VIDEO4": "Frame 13",
+                    "VIDEO5": "Frame 6",
+                    "VIDEO6": "Frame 7",
+                    "VIDEO7": "Frame 5",
+                    "VIDEO8": "Frame 8",
+                    "VIDEO9": "Frame 1",
+                    "VIDEO10": "Frame 10",
+                    "VIDEO11": "Frame 9",
+                    "VIDEO12": "Frame 3",
+                    "VIDEO13": "Frame 2",
+                    "VIDEO14": "Frame 4"
+                },
+                {
+                    "VIDEO1": "Frame 4",
+                    "VIDEO2": "Frame 11",
+                    "VIDEO3": "Frame 14",
+                    "VIDEO4": "Frame 13",
+                    "VIDEO5": "Frame 6",
+                    "VIDEO6": "Frame 7",
+                    "VIDEO7": "Frame 5",
+                    "VIDEO8": "Frame 8",
+                    "VIDEO9": "Frame 1",
+                    "VIDEO10": "Frame 10",
+                    "VIDEO11": "Frame 9",
+                    "VIDEO12": "Frame 3",
+                    "VIDEO13": "Frame 2",
+                    "VIDEO14": "Frame 4"
+                }
+            ],
+            "commonFrameProperties": {
+                "baseDir": "https://raw.githubusercontent.com/55708r/lookit-stimuli-template/master/",
+                "pageColor": "white",
+                "backgroundColor": "white",
+                "parentTextBlock": {
+                    "title": "For Parents:",
+                    "text": "Have your child explain what they see in this scene. Please do not help them."
+                },
+                "audioTypes": ["mp3", "ogg"],
+                "videoTypes": ["mp4"],
+                "showPreviousButton": false,
+                "autoProceed": false,
+                "nextButtonText": "Next",
+                "requiredDuration": 5,
+                "requireVideoCount": 0,
+                "showWaitForRecordingMessage": false
+            }
+        },
+        "outro": {
+            "kind": "exp-lookit-video",
+            "video": {
+                "loop": false,
+                "position": "fill",
+                "source": "outro"
+            },
+            "backgroundColor": "white",
+            "requireVideoCount": 1,
+            "autoProceed": false,
+            "nextButtonText": "Finish",
+            "doRecording": false,
+            "frameOffsetAfterPause": 0,
+            "baseDir": "https://raw.githubusercontent.com/55708r/lookit-stimuli-template/master/",
+            "videoTypes": [
+                "webm",
+                "mp4"
+            ]
+        },
+        "info-survey": {
+                "kind": "exp-lookit-survey",
+                "formSchema": {
+                    "schema": {
+                        "type": "object",
+                        "title": "Thank you for playing! If you'd like to give us feedback, please do so below.",
+                        "properties": {
+                            "instructions": {
+                                "type": "string",
+                                "title": "Were the instructions clear?",
+                                "default": ""
+                            },
+                            "interest": {
+                                "type": "string",
+                                "title": "Was your child interested in the game?",
+                                "default": ""
+                            },
+                            "general_feedback": {
+                                "type": "string",
+                                "title": "Do you have any additional feedback?",
+                                "default": ""
+                            }
+                        }
+                    }
+                },
+                "nextButtonText": "Next",
+                "doRecording": false
+        },
+        "exit-survey": {
+            "kind": "exp-lookit-exit-survey",
+            "doRecording": false,
+            "debriefing": {
+                "text": "In this study, we want to know if children understand what makes sets easier and harder to count, even before they have a lot of experience counting themselves. \n\nAs you may recall, we started off by asking your child to determine which book page is easier to read, and then which tower is easier to build. These were warm up trials. Then, your child was asked to make a series of judgments about counting: given two cards, with the same number of dots within each pair, which card is easier to count? The dots between pairs could vary in three basic ways: size, color, and spatial arrangement. These were our main trials of interest. In the final set of trials, your child was asked to count items on a screen. This structure will allow is to see if children are sensitive to properties that affect task difficulty—in this case, which card is easier to count (as measured by the main trials of interest)—in respect to their own counting abilities (as measured by the final trials). \n\nWhy is this important? \n\nScientists still don’t completely understand how children learn as quickly as they do. Our hypothesis is that children actively choose learning tasks which are most appropriate for themselves. As such, in this study we expect that even children who cannot yet count up all the dots in the trials will still distinguish which card is easier to count.\n\nThank you so much for participating! Our lab will email you a $5 Amazon.com gift card within three days of participation to thank you for your time. (One gift card per child, your child must be in the age range for the study, and your child must be visible during the study.) Please don’t hesitate to contact me at perezke@mit.edu if you have any additional questions or feedback."
+            }
+        }
+    },
+    "sequence": [
+        "study-intro",
+        "video-config",
+        "video-consent",
+        "instructions",
+        "welcome",
+        "trials-intro",
+        "trials-r1",
+        "intermission",
+        "trials-r2",
+        "outro",
+        "info-survey",
+        "exit-survey"
+    ]
+}
